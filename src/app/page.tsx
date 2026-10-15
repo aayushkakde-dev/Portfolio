@@ -8,8 +8,8 @@ type Project = {
   liveUrl?: string;
 };
 
-const LINKEDIN_URL = "https://www.linkedin.com/in/your-linkedin-id/";
-const EMAIL = "your.email@example.com";
+const LINKEDIN_URL = "https://www.linkedin.com/in/aayushkakde/";
+const EMAIL = "aayushkakde@gmail.com";
 
 const skills = [
   "Python",
