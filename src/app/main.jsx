@@ -30,7 +30,7 @@ function App() {
           </p>
           <div className="socials">
             <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
-            <a href="mailto:YOUR_EMAIL@example.com">Email ↗</a>
+            <a href="mailto:aayushkakde@gmail.com">Email ↗</a>
             <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub ↗</a>
           </div>
         </div>
@@ -88,7 +88,7 @@ function App() {
       <section id="contact" className="content-section contact">
         <p className="eyebrow">LET'S CONNECT</p>
         <h2>Have an idea? Let's talk.</h2>
-        <a href="mailto:YOUR_EMAIL@example.com">Get in touch ↗</a>
+        <a href="mailto:aayushkakde@gmail.com">Get in touch ↗</a>
       </section>
 
       <footer>© 2026 Aayush Prashanth Kakde</footer>
