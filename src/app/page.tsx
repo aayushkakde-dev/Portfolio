@@ -50,41 +50,44 @@ export default function Page() {
         </nav>
       </header>
 
+      {/* --- EXTRAVAGANZA THEME HERO SECTION --- */}
       <section id="overview" className="hero section-anchor">
-        <div className="hero-overlay" aria-hidden="true" />
-        <div className="hero-inner">
-          <div className="hero-intro">
-            <p className="hero-name">Aayush Prashanth Kakde</p>
-            <p className="hero-degree">
-              Pursuing a Bachelor&apos;s Degree in Engineering, majoring in Artificial
-              Intelligence and Machine Learning.
-            </p>
-            <p className="hero-description">
-              I build intelligent software and practical machine-learning systems,
-              turning data and complex ideas into useful, intuitive products.
-            </p>
+        <div className="hero-content">
+          <div className="hero-inner">
+            <div className="hero-intro">
+              <p className="hero-name">Aayush Prashanth Kakde</p>
+              <p className="hero-degree">
+                Pursuing a Bachelor&apos;s Degree in Engineering, majoring in Artificial
+                Intelligence and Machine Learning.
+              </p>
+              <p className="hero-description">
+                I build intelligent software and practical machine-learning systems,
+                turning data and complex ideas into useful, intuitive products.
+              </p>
 
-            <div className="hero-links" aria-label="Contact links">
-              <a href={LINKEDIN_URL} target="_blank" rel="noreferrer">
-                LinkedIn <span aria-hidden="true">↗</span>
-              </a>
-              <a href={`mailto:${EMAIL}`}>
-                Email <span aria-hidden="true">↗</span>
+              <div className="hero-links" aria-label="Contact links">
+                <a href={LINKEDIN_URL} target="_blank" rel="noreferrer">
+                  LinkedIn <span aria-hidden="true">↗</span>
+                </a>
+                <a href={`mailto:${EMAIL}`}>
+                  Email <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </div>
+
+            <div className="hero-bottom">
+              <h1 className="hero-title">
+                AI &amp; ML Engineering Student<span className="hero-caret" aria-hidden="true">|</span>
+              </h1>
+              <a className="scroll-cue" href="#projects">
+                <span className="scroll-line" aria-hidden="true" />
+                Scroll to explore
               </a>
             </div>
           </div>
-
-          <div className="hero-bottom">
-            <h1 className="hero-title">
-              AI &amp; ML Engineering Student<span className="hero-caret" aria-hidden="true">|</span>
-            </h1>
-            <a className="scroll-cue" href="#projects">
-              <span className="scroll-line" aria-hidden="true" />
-              Scroll to explore
-            </a>
-          </div>
         </div>
       </section>
+      {/* ----------------------------------------- */}
 
       <section id="projects" className="content-section section-anchor projects-section">
         <div className="section-inner">
