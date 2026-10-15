@@ -1,3 +1,4 @@
+// @ts-expect-error - CSS side-effect import
 import "./portfolio.css";
 
 type Project = {
@@ -23,7 +24,6 @@ const skills = [
   "CSS",
 ];
 
-// Add project names, summaries, technology tags, and real GitHub URLs here.
 const projects: Project[] = [];
 
 const navigation = [
@@ -50,44 +50,41 @@ export default function Page() {
         </nav>
       </header>
 
-      {/* --- EXTRAVAGANZA THEME HERO SECTION --- */}
       <section id="overview" className="hero section-anchor">
-        <div className="hero-content">
-          <div className="hero-inner">
-            <div className="hero-intro">
-              <p className="hero-name">Aayush Prashanth Kakde</p>
-              <p className="hero-degree">
-                Pursuing a Bachelor&apos;s Degree in Engineering, majoring in Artificial
-                Intelligence and Machine Learning.
-              </p>
-              <p className="hero-description">
-                I build intelligent software and practical machine-learning systems,
-                turning data and complex ideas into useful, intuitive products.
-              </p>
+        <div className="hero-overlay" aria-hidden="true" />
+        <div className="hero-inner">
+          <div className="hero-intro">
+            <p className="hero-name">Aayush Prashanth Kakde</p>
+            <p className="hero-degree">
+              Pursuing a Bachelor&apos;s Degree in Engineering, majoring in Artificial
+              Intelligence and Machine Learning.
+            </p>
+            <p className="hero-description">
+              I build intelligent software and practical machine-learning systems,
+              turning data and complex ideas into useful, intuitive products.
+            </p>
 
-              <div className="hero-links" aria-label="Contact links">
-                <a href={LINKEDIN_URL} target="_blank" rel="noreferrer">
-                  LinkedIn <span aria-hidden="true">↗</span>
-                </a>
-                <a href={`mailto:${EMAIL}`}>
-                  Email <span aria-hidden="true">↗</span>
-                </a>
-              </div>
-            </div>
-
-            <div className="hero-bottom">
-              <h1 className="hero-title">
-                AI &amp; ML Engineering Student<span className="hero-caret" aria-hidden="true">|</span>
-              </h1>
-              <a className="scroll-cue" href="#projects">
-                <span className="scroll-line" aria-hidden="true" />
-                Scroll to explore
+            <div className="hero-links" aria-label="Contact links">
+              <a href={LINKEDIN_URL} target="_blank" rel="noreferrer">
+                LinkedIn <span aria-hidden="true">↗</span>
+              </a>
+              <a href={`mailto:${EMAIL}`}>
+                Email <span aria-hidden="true">↗</span>
               </a>
             </div>
           </div>
+
+          <div className="hero-bottom">
+            <h1 className="hero-title">
+              AI &amp; ML Engineering Student<span className="hero-caret" aria-hidden="true">|</span>
+            </h1>
+            <a className="scroll-cue" href="#projects">
+              <span className="scroll-line" aria-hidden="true" />
+              Scroll to explore
+            </a>
+          </div>
         </div>
       </section>
-      {/* ----------------------------------------- */}
 
       <section id="projects" className="content-section section-anchor projects-section">
         <div className="section-inner">
@@ -111,8 +108,8 @@ export default function Page() {
                   <h3>{project.name}</h3>
                   <p className="project-description">{project.description}</p>
                   <div className="project-tags">
-                    {project.technologies.map((technology) => (
-                      <span key={technology}>{technology}</span>
+                    {project.technologies.map((tech) => (
+                      <span key={tech}>{tech}</span>
                     ))}
                   </div>
                   <div className="project-links">
